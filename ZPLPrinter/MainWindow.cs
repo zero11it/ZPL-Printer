@@ -29,6 +29,7 @@ namespace ZPLPrinter
                 // Allow the user to select a printer.
                 PrintDialog pd = new PrintDialog();
                 pd.PrinterSettings = new PrinterSettings();
+                pd.UseEXDialog = true;
                 if (pd.ShowDialog() == DialogResult.OK)
                 {
                     // Send a printer-specific to the printer.
